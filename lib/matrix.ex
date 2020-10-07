@@ -11,7 +11,7 @@ defmodule Matrix do
       iex> Matrix.traverse(5)
 
   """
-  def traverse(size) when is_integer(size) and size == 1 do
+  def traverse(1) do
     IO.puts("(#{1}, #{1})")
   end
 
