@@ -1,21 +1,8 @@
-# Matrix
+# Matrix traversal
 
-**TODO: Add description**
-
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `matrix` to your list of dependencies in `mix.exs`:
+`cd` into this directory and run in an interactive elixir session with `iex -S mix`
 
 ```elixir
-def deps do
-  [
-    {:matrix, "~> 0.1.0"}
-  ]
-end
+Matrix.traverse(5)
+> (0, 0), (1, 0), (2, 0), (3, 0), (4, 0), (4, 1), (4, 2), (4, 3), (4, 4), (3, 4), (2, 4), (1, 4), (0, 4), (0, 3), (0, 2), (0, 1), (1, 1), (2, 1), (3, 1), (3, 2), (3, 3), (2, 3), (1, 3), (1, 2), (2, 2), finish
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/matrix](https://hexdocs.pm/matrix).
-
