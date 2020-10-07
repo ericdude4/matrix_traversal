@@ -55,44 +55,4 @@ defmodule Matrix do
     IO.write("(#{x}, #{y}), ")
     do_traverse(n, x + 1, y, zero)
   end
-
-  # defp do_traverse(n, x, y, zero) when x == zero and y == zero do
-  #   IO.puts("finish lap (#{x}, #{y}) #{n} #{zero}")
-  #   do_traverse(n - 2, x + 1, y + 1, zero + 1)
-  # end
-
-  # defp do_traverse(n, x, y, zero) do
-  #   # Print the current coordinate
-  #   IO.puts("(#{x}, #{y}) #{n} #{zero}")
-  #   # Continue to next coordinate
-
-  #   # x = 0
-  #   # y = 3
-  #   # n = 4
-  #   # zero = 0
-  #   cond do
-  #     y == n && x > zero ->
-  #       IO.puts("three")
-  #       # bottom right to bottom left
-  #       do_traverse(n, x - 1, y, zero)
-
-  #     x == zero && y > zero ->
-  #       IO.puts("four")
-  #       # bottom left to top left
-  #       do_traverse(n, x, y - 1, zero)
-
-  #     x < n && y < n ->
-  #       # top left to top right
-  #       IO.puts("one")
-  #       do_traverse(n, x + 1, y, zero)
-
-  #     x == n && y < n ->
-  #       IO.puts("two")
-  #       # top right to bottom right
-  #       do_traverse(n, x, y + 1, zero)
-
-  #     true ->
-  #       IO.puts("shouldn't be here")
-  #   end
-  # end
 end
